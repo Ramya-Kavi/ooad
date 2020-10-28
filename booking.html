@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <title>Booking-Details</title>
+    <style>
+      input[type=submit],
+     input[type=reset]{
+      margin-left: -43px;
+      margin-right: 50px; 
+  }
+  @media only screen and (max-width:480px){
+    input[type=submit],
+     input[type=reset]{
+      margin-left: 2px;
+     }
+  }
+    </style>
+</head>
+<body>
+  
+    <section class="booking-section clearfix">
+      
+        <div class="heading">
+          <h2>room booking</h2>
+        </div>
+    <form class="reg-form" action="bookingconnection.php" method="post">
+
+      <div class="row">
+        <div class="col span-1-of-3">
+          <label for="name">Name</label>
+        </div>
+        <div class="col span-2-of-3">
+          <input type="text" name="name" id="name" placeholder="your name" required>
+        </div>
+      </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label for="room_type" >Room Type</label>
+            </div>
+            <div class="col span-2-of-3">
+              <select class="" name="room_type" id="room_type">
+                <option value="selecttype" selected>Select Type</option>
+                <option value="withac">With AC</option>
+                <option value="withoutac">Without AC</option>
+              </select>
+            </div>
+        </div>    
+    
+         <div class="row">
+          <div class="col span-1-of-3">
+            <label for="check_in">checkin</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="date" name="check_in" id="check_in" required>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label for="check_out">checkout</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="date" name="check_out" id="check_out" required>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="person" >No of Persons</label>
+            </div>
+            <div class="col span-2-of-3">
+                <input type="number" name="person" id="person" required>
+            </div>
+        </div> 
+  
+        
+       
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="">&nbsp;</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="submit" value="submit">
+            <input type="reset">
+          </div>
+        </div>
+      
+      </form>
+      
+    </section>
+</body>
+</html>
