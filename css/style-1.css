@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/hotel-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color : white;
+    font-family: sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
+}
+h4{
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color:  #0fabbc;
+    width: 20%;
+    margin:auto;
+    padding: 10px;  
+}
+
+h2{
+    font-size: 150%;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    padding: 20px 0 ;
+    background-color: #0fabbc;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover,a:active{
+    background-color: rgba(5, 69, 78, 0.733);
+   
+    margin:auto;
+    padding: 10px;  
+}
+  
